@@ -1,0 +1,8 @@
+2024-09-25 07:52:05.416155-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "CREATE TABLE CLIENTE ( id INT, nombre VARCHAR(150) NOT NULL, apellido VARCHAR(150) NOT NULL, dni INT NOT NULL, [*])"; se esperaba "identifier"
+Syntax error in SQL statement "CREATE TABLE CLIENTE ( id INT, nombre VARCHAR(150) NOT NULL, apellido VARCHAR(150) NOT NULL, dni INT NOT NULL, [*])"; expected "identifier"; SQL statement:
+CREATE TABLE CLIENTE ( id INT, nombre VARCHAR(150) NOT NULL, apellido VARCHAR(150) NOT NULL, dni INT NOT NULL, ) [42001-224]
+2024-09-25 08:14:07.976595-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "CREATE TABLE CLIENTE ( id INT, nombre VARCHAR(150) NOT NULL, apellido VARCHAR(150) NOT NULL, dni INT NOT NULL, [*])"; se esperaba "identifier"
+Syntax error in SQL statement "CREATE TABLE CLIENTE ( id INT, nombre VARCHAR(150) NOT NULL, apellido VARCHAR(150) NOT NULL, dni INT NOT NULL, [*])"; expected "identifier"; SQL statement:
+CREATE TABLE CLIENTE ( id INT, nombre VARCHAR(150) NOT NULL, apellido VARCHAR(150) NOT NULL, dni INT NOT NULL, ) [42001-224]
