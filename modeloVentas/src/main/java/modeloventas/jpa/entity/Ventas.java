@@ -1,40 +1,25 @@
 package modeloventas.jpa.entity;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 
 @Entity
 @Table(name = "VENTAS")
 
  public class Ventas {
 
-    public Ventas () {}
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
 
-    public Ventas(String cliente, int monto) {
-        this.cliente = cliente;
-        this.monto = monto;
-    }
+    @Column(name = "CLIENTE_ID")
+    private int cliente_id;
 
-    @Column(name = "CLIENTE")
-    private String cliente;
+    @Column(name = "CREATED_AT")
+    private int created_at;
 
-    @Column(name = "MONTO")
-    private int monto;
+    @Column(name = "TOTAL")
+    private int total;
 
-    public String getCliente() {
-        return cliente;
-    }
-
-    public void setCliente(String cliente) {
-        this.cliente = cliente;
-    }
-
-    public int getMonto() {
-        return monto;
-    }
-
-    public void setMonto(int monto) {
-        this.monto = monto;
-    }
+    @ManyToOne(fecth = FetchType.LAZY)
+    private Cliente cliente;
 }
